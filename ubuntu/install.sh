@@ -45,7 +45,7 @@ resources/php.sh
 resources/nginx.sh
 
 #Postgres
-resources/postgresql.sh
+#resources/postgresql.sh
 
 #FreeSWITCH
 resources/switch.sh
