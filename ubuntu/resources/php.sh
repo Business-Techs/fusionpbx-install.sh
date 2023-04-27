@@ -83,7 +83,7 @@ sed 's#; max_input_vars = .*#max_input_vars = 8000#g' -i $php_ini_file
 if [ .$cpu_architecture = .'x86' ]; then
 	. ./ioncube.sh
 fi
-
+echo "ioncube installed"
 #restart php-fpm
 systemctl daemon-reload
 if [ ."$php_version" = ."5.6" ]; then

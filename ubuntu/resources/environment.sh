@@ -1,5 +1,9 @@
 #!/bin/sh
 
+#includes
+. ./config.sh
+. ./colors.sh
+
 #make sure lsb release is installed
 apt-get install lsb-release
 
