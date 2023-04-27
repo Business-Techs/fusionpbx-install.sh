@@ -12,7 +12,7 @@ verbose "Installing Fail2ban"
 
 #add the dependencies
 apt-get install -y fail2ban
-
+echo "INSTALLED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 #move the filters
 cp fail2ban/sip-auth-failure.conf /etc/fail2ban/filter.d/sip-auth-failure.conf
 cp fail2ban/sip-auth-challenge.conf /etc/fail2ban/filter.d/sip-auth-challenge.conf
@@ -32,4 +32,4 @@ cp fail2ban/jail.local /etc/fail2ban/jail.local
 #fi
 
 #restart fail2ban
-/usr/sbin/service fail2ban restart
+#/usr/sbin/service fail2ban restart
