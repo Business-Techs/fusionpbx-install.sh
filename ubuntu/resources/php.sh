@@ -85,7 +85,7 @@ if [ .$cpu_architecture = .'x86' ]; then
 fi
 echo "ioncube installed"
 #restart php-fpm
-systemctl daemon-reload
+# systemctl daemon-reload
 if [ ."$php_version" = ."5.6" ]; then
         systemctl restart php5-fpm
 fi
@@ -99,7 +99,7 @@ if [ ."$php_version" = ."7.2" ]; then
         systemctl restart php7.2-fpm
 fi
 if [ ."$php_version" = ."7.4" ]; then
-        systemctl restart php7.4-fpm
+        service php7.4-fpm restart
 fi
 #init.d
 #/usr/sbin/service php5-fpm restart
