@@ -57,11 +57,11 @@ fi
 apt install -y libpq-dev
 
 #systemd
-systemctl daemon-reload
-systemctl restart postgresql
+#systemctl daemon-reload
+#systemctl restart postgresql
 
 #init.d
-#/usr/sbin/service postgresql restart
+service postgresql restart
 
 #install the database backup
 #cp backup/fusionpbx-backup /etc/cron.daily
