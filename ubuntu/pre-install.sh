@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "Running preinstall" > leave_me_here.txt
+
 #upgrade the packages
 apt-get update && apt-get upgrade -y
 
