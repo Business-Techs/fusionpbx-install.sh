@@ -57,4 +57,4 @@ resources/fail2ban.sh
 server_address=$(hostname -I)
 
 #add the database schema, user and groups
-resources/finish.sh
+resources/finish.sh > ~/fusion-setup.log
